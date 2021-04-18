@@ -1,13 +1,11 @@
 package br.com.gustavo.ControleEnderecos;
 
-import javax.persistence.Column;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
 public class CadEnderecoRequest {
 
     @NotBlank
-    @Column(nullable = false)
     private String logradouro;
     @NotNull
     private Integer numero;
